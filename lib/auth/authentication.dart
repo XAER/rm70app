@@ -68,6 +68,63 @@ class _AuthenticationState extends State<Authentication> {
                   if (shouldNavigate) {
                     // Navigate
                     Navigator.pushNamed(context, "/home");
+                  } else {
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                              content: Container(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 10.0,
+                                    ),
+                                    Icon(
+                                      Icons.info_outline,
+                                      color: Colors.lightBlue,
+                                      size: 25,
+                                    ),
+                                    SizedBox(
+                                      width: 8,
+                                    ),
+                                    Text("Errore!",
+                                        style: TextStyle(
+                                          color: Colors.lightBlue,
+                                          fontSize: 20,
+                                          fontStyle: FontStyle.italic,
+                                        ))
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                Text(
+                                  "La mail inserità è invalida o già presente nel sistema.\nRiprovare.",
+                                  style: TextStyle(
+                                    fontStyle: FontStyle.italic,
+                                    fontSize: 18,
+                                  ),
+                                  textAlign: TextAlign.justify,
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                TextButton(
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                  child: Text(
+                                    "Chiudi",
+                                    style: TextStyle(fontSize: 20),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ));
+                        });
                   }
                 },
                 padding: EdgeInsets.fromLTRB(15.0, 0, 15.0, 0),
@@ -82,6 +139,63 @@ class _AuthenticationState extends State<Authentication> {
                   if (shouldNavigate) {
                     // Navigate
                     Navigator.popAndPushNamed(context, "/home");
+                  } else {
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                              content: Container(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 10.0,
+                                    ),
+                                    Icon(
+                                      Icons.info_outline,
+                                      color: Colors.lightBlue,
+                                      size: 25,
+                                    ),
+                                    SizedBox(
+                                      width: 8,
+                                    ),
+                                    Text("Errore!",
+                                        style: TextStyle(
+                                          color: Colors.lightBlue,
+                                          fontSize: 20,
+                                          fontStyle: FontStyle.italic,
+                                        ))
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                Text(
+                                  "La mail inserità è invalida o non presente nel sistema.\nRiprovare.",
+                                  style: TextStyle(
+                                    fontStyle: FontStyle.italic,
+                                    fontSize: 18,
+                                  ),
+                                  textAlign: TextAlign.justify,
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                TextButton(
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                  child: Text(
+                                    "Chiudi",
+                                    style: TextStyle(fontSize: 20),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ));
+                        });
                   }
                 },
                 padding: EdgeInsets.fromLTRB(15.0, 0, 15.0, 0),
