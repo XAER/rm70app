@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">297549666110-i9rtnes5v6hlthb8ualu0m43a6j66ifv.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">297549666110</string>
+    <string name="google_api_key" translatable="false">AIzaSyCjFq5BpxwTuQAxhfL8e0GKWPGZtrOLcV8</string>
+    <string name="google_app_id" translatable="false">1:297549666110:android:949f0a24310b5fd6d1be6f</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCjFq5BpxwTuQAxhfL8e0GKWPGZtrOLcV8</string>
+    <string name="google_storage_bucket" translatable="false">roma70app.appspot.com</string>
+    <string name="project_id" translatable="false">roma70app</string>
+</resources>

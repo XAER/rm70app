@@ -70,7 +70,11 @@ class Home extends StatelessWidget {
         title: Text(
           "Roma 70 App",
           style: TextStyle(
-              fontSize: 20, letterSpacing: 3, color: Colors.amberAccent),
+            fontSize: 20,
+            letterSpacing: 3,
+            color: Colors.amberAccent,
+            fontFamily: 'Cinzel',
+          ),
         ),
         actions: [
           IconButton(

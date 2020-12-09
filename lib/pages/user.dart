@@ -8,9 +8,6 @@ class UserPage extends StatefulWidget {
 }
 
 class _UserPageState extends State<UserPage> {
-  static User user = FirebaseAuth.instance.currentUser;
-  final String _email = user.email;
-
   TextEditingController _name = TextEditingController();
 
   @override
@@ -52,7 +49,7 @@ class _UserPageState extends State<UserPage> {
                 SizedBox(
                   width: 20,
                 ),
-                Text(_email.toString(),
+                Text(FirebaseAuth.instance.currentUser.email.toString(),
                     style:
                         TextStyle(fontStyle: FontStyle.italic, fontSize: 15)),
               ],
@@ -60,78 +57,18 @@ class _UserPageState extends State<UserPage> {
             SizedBox(
               height: 30,
             ),
-            Row(
+            Column(
+              mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                SizedBox(
-                  width: 30,
-                ),
-                Icon(Icons.text_fields_outlined),
-                SizedBox(
-                  width: 10,
-                ),
-                Text(
-                  "Nome:",
-                  style:
-                      TextStyle(letterSpacing: 2, fontWeight: FontWeight.bold),
-                ),
-                SizedBox(
-                  width: 20,
-                ),
-                Container(
-                  padding: EdgeInsets.fromLTRB(0, 0, 50, 0),
-                  child: Text(
-                    _name.text,
-                    style: TextStyle(fontStyle: FontStyle.italic, fontSize: 15),
-                  ),
-                ),
-                IconButton(
-                  icon: Icon(Icons.edit),
-                  onPressed: () {
-                    showDialog(
-                        context: context,
-                        builder: (BuildContext context) {
-                          return AlertDialog(
-                            content: Container(
-                              child: Column(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  Text(
-                                    "Inserisci il tuo nome:",
-                                    style:
-                                        TextStyle(fontStyle: FontStyle.italic),
-                                  ),
-                                  SizedBox(
-                                    height: 8,
-                                  ),
-                                  TextFormField(
-                                    controller: _name,
-                                    decoration: InputDecoration(
-                                        border: OutlineInputBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(10)),
-                                        hintText: "Mario Rossi",
-                                        hintStyle: TextStyle(fontSize: 12)),
-                                  ),
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.end,
-                                    children: [
-                                      TextButton(
-                                          onPressed: () {
-                                            setState(() {});
-                                            Navigator.of(context).pop();
-                                          },
-                                          child: Text("Okay"))
-                                    ],
-                                  )
-                                ],
-                              ),
-                            ),
-                          );
-                        });
+                RaisedButton(
+                  onPressed: () async {
+                    await FirebaseAuth.instance.signOut();
+                    Navigator.popAndPushNamed(context, "/home");
                   },
+                  child: Text("Esci"),
                 )
               ],
-            )
+            ),
           ],
         ),
       ),
