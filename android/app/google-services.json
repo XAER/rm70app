@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "297549666110",
+    "project_id": "roma70app",
+    "storage_bucket": "roma70app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297549666110:android:949f0a24310b5fd6d1be6f",
+        "android_client_info": {
+          "package_name": "com.example.r70app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297549666110-i9rtnes5v6hlthb8ualu0m43a6j66ifv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjFq5BpxwTuQAxhfL8e0GKWPGZtrOLcV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "297549666110-i9rtnes5v6hlthb8ualu0m43a6j66ifv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "297549666110-muh25p48g5do2i4cnc4sufh5sm9ir2rt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.r70app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
