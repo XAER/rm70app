@@ -60,7 +60,7 @@ class Home extends StatelessWidget {
               ],
             ),
             onTap: () {
-              Navigator.popAndPushNamed(context, "/weather");
+              // Navigator.popAndPushNamed(context, "/weather");
             },
           )
         ],
@@ -93,11 +93,18 @@ class Home extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Image(
-              image: AssetImage("/assets/images/cafe_70.png"),
-              height: 150,
+            SizedBox(
+              height: 40,
             ),
-            SizedBox(height: 80.0),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(8),
+              child: Image(
+                image: NetworkImage(
+                    "https://f643.z3portal.com/image.php?nocache=1&width=1200&image=/archivio/foto/731133/DSCF0632_2.jpg"),
+                height: 190,
+              ),
+            ),
+            SizedBox(height: 60.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -131,7 +138,9 @@ class Home extends StatelessWidget {
                   children: [
                     IconButton(
                         iconSize: 40,
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, "/poste");
+                        },
                         icon: Icon(Icons.local_post_office_outlined)),
                     Text("Poste",
                         style: TextStyle(

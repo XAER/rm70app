@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:r70app/pages/bars.dart';
 import 'package:r70app/pages/home.dart';
 import 'package:r70app/pages/loading.dart';
+import 'package:r70app/pages/poste.dart';
 import 'package:r70app/pages/user.dart';
 import 'package:r70app/pages/weatherpage.dart';
 import 'package:r70app/auth/authentication.dart';
@@ -19,6 +20,7 @@ void main() async {
       "/weather": (context) => WeatherPage(),
       "/authentication": (context) => Authentication(),
       "/user": (context) => UserPage(),
+      "/poste": (context) => Poste()
     },
   ));
 }
