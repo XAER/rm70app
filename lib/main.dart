@@ -5,7 +5,6 @@ import 'package:r70app/pages/home.dart';
 import 'package:r70app/pages/loading.dart';
 import 'package:r70app/pages/poste.dart';
 import 'package:r70app/pages/user.dart';
-import 'package:r70app/pages/weatherpage.dart';
 import 'package:r70app/auth/authentication.dart';
 
 void main() async {
@@ -17,7 +16,6 @@ void main() async {
       "/": (context) => Loading(),
       "/home": (context) => Home(),
       "/bars": (context) => Bars(),
-      "/weather": (context) => WeatherPage(),
       "/authentication": (context) => Authentication(),
       "/user": (context) => UserPage(),
       "/poste": (context) => Poste()
