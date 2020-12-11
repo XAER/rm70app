@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:r70app/pages/bars.dart';
+import 'package:r70app/pages/debug/debug.dart';
 import 'package:r70app/pages/home.dart';
 import 'package:r70app/pages/loading.dart';
 import 'package:r70app/pages/poste.dart';
@@ -18,7 +19,8 @@ void main() async {
       "/bars": (context) => Bars(),
       "/authentication": (context) => Authentication(),
       "/user": (context) => UserPage(),
-      "/poste": (context) => Poste()
+      "/poste": (context) => Poste(),
+      "/debug": (context) => Debug(),
     },
   ));
 }

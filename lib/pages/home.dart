@@ -51,13 +51,13 @@ class Home extends StatelessWidget {
           ListTile(
             title: Row(
               children: [
-                Icon(Icons.cloud_queue_outlined),
+                Icon(Icons.bug_report),
                 SizedBox(width: 10.0),
-                Text("Meteo"),
+                Text("Debug"),
               ],
             ),
             onTap: () {
-              // Navigator.popAndPushNamed(context, "/weather");
+              Navigator.popAndPushNamed(context, "/debug");
             },
           )
         ],

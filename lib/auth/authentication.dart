@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:r70app/net/flutterfire.dart';
 
+// TODO: separate the SignIn and Register
+
 class Authentication extends StatefulWidget {
   @override
   _AuthenticationState createState() => _AuthenticationState();
