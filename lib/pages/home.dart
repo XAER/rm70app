@@ -1,8 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:r70app/auth/authentication.dart';
-import 'package:r70app/net/flutterfire.dart';
-import 'package:r70app/pages/user.dart';
 
 class Home extends StatelessWidget {
   @override
