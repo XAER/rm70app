@@ -7,6 +7,7 @@ import 'package:r70app/pages/loading.dart';
 import 'package:r70app/pages/poste.dart';
 import 'package:r70app/pages/user.dart';
 import 'package:r70app/auth/authentication.dart';
+import 'package:r70app/auth/register.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,6 +21,7 @@ void main() async {
       "/authentication": (context) => Authentication(),
       "/user": (context) => UserPage(),
       "/poste": (context) => Poste(),
+      "/register": (context) => Register(),
       "/debug": (context) => Debug(),
     },
   ));

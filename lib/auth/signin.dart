@@ -23,14 +23,15 @@ Widget logIn(BuildContext context) {
         SizedBox(
           height: 10,
         ),
-        // Password
+        // Passw
         TextFormField(
           controller: pass,
+          obscureText: true,
           decoration: InputDecoration(
             icon: Icon(Icons.vpn_key_outlined),
             border:
                 OutlineInputBorder(borderRadius: BorderRadius.circular(10.0)),
-            hintText: "Password",
+            hintText: "●●●●●●●●",
             labelText: "Password",
           ),
         ),

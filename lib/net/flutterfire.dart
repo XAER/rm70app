@@ -12,8 +12,8 @@ Future<bool> signIn(String email, String password) async {
   }
 }
 
-Future<bool> register(String name, String surname, String username,
-    String email, String password) async {
+Future<bool> register(
+    String name, String username, String email, String password) async {
   try {
     // When creating a new user I want it to be added to the Database
     // to store the User name, surname and Nickname, I can make these 3
@@ -27,7 +27,7 @@ Future<bool> register(String name, String surname, String username,
       // Add user to the database collection
       return users
           .doc(FirebaseAuth.instance.currentUser.uid.toString())
-          .set({'full_name': "$name $surname", 'username': username.toString()})
+          .set({'full_name': "$name", 'username': username.toString()})
           .then((value) => print('User Added'))
           .catchError((error) => print("Failed to add user: $error"));
     }
