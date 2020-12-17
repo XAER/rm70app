@@ -43,7 +43,7 @@ class _RegisterState extends State<Register> {
                     icon: Icon(Icons.text_fields_outlined),
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20.0)),
-                    hintText: "Mario",
+                    hintText: "Mario Rossi",
                     labelText: "Nome",
                   ),
                 ),

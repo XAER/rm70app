@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:maps_launcher/maps_launcher.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -166,7 +167,10 @@ class Home extends StatelessWidget {
                   children: [
                     IconButton(
                         iconSize: 40,
-                        onPressed: () {},
+                        onPressed: () {
+                          MapsLauncher.launchQuery(
+                              "Roma 70 00142 Rome, Metropolitan City of Rome, Italy");
+                        },
                         icon: Icon(Icons.navigation_outlined)),
                     Text("Mappa",
                         style: TextStyle(
@@ -179,8 +183,8 @@ class Home extends StatelessWidget {
                     IconButton(
                         iconSize: 40,
                         onPressed: () {},
-                        icon: Icon(Icons.cloud_queue_outlined)),
-                    Text("Meteo",
+                        icon: Icon(Icons.emoji_people_outlined)),
+                    Text("Social",
                         style: TextStyle(
                             fontSize: 15, fontWeight: FontWeight.bold))
                   ],
