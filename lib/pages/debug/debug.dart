@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:r70app/auth/signin.dart';
-import 'package:r70app/net/flutterfire.dart';
 
 class Debug extends StatefulWidget {
   @override

@@ -211,7 +211,9 @@ class Home extends StatelessWidget {
                   children: [
                     IconButton(
                         iconSize: 40,
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, "/feedback");
+                        },
                         icon: Icon(Icons.feedback_outlined)),
                     Text("Feedback",
                         style: TextStyle(
