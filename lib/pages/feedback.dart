@@ -76,7 +76,6 @@ class _FeedbackState extends State<Feedback> {
         child: TextFormField(
           controller: _nome,
           decoration: InputDecoration(
-            icon: Icon(Icons.text_fields_outlined),
             border:
                 OutlineInputBorder(borderRadius: BorderRadius.circular(10.0)),
             hintText: "Mario",
