@@ -4,6 +4,7 @@ import 'package:r70app/pages/bars.dart';
 import 'package:r70app/pages/debug/debug.dart';
 import 'package:r70app/pages/feedback.dart' as feed;
 import 'package:r70app/pages/home.dart';
+import 'package:r70app/pages/info.dart';
 import 'package:r70app/pages/loading.dart';
 import 'package:r70app/pages/poste.dart';
 import 'package:r70app/pages/user.dart';
@@ -25,6 +26,7 @@ void main() async {
       "/register": (context) => Register(),
       "/debug": (context) => Debug(),
       "/feedback": (context) => feed.Feedback(),
+      "/info": (context) => Info(),
     },
   ));
 }

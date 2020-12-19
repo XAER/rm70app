@@ -16,6 +16,7 @@ class _DebugState extends State<Debug> {
       ),
       body: Center(
         child: FlatButton(
+          onPressed: (){},
           child: Text("Send"),
         ),
       ),

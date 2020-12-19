@@ -60,6 +60,20 @@ class Home extends StatelessWidget {
             onTap: () {
               Navigator.popAndPushNamed(context, "/debug");
             },
+          ),
+          ListTile(
+            title: Row(
+              children: [
+                Icon(Icons.info),
+                SizedBox(
+                  width: 10.0,
+                ),
+                Text("Info")
+              ],
+            ),
+            onTap: () {
+              Navigator.pushNamed(context, "/info");
+            },
           )
         ],
       )),
@@ -224,10 +238,11 @@ class Home extends StatelessWidget {
                 Column(
                   children: [
                     IconButton(
-                        iconSize: 40,
-                        onPressed: () {},
-                        icon: Icon(Icons.info_outline)),
-                    Text("Info",
+                      iconSize: 40,
+                      onPressed: () {},
+                      icon: Icon(Icons.park),
+                    ),
+                    Text("Parchi",
                         style: TextStyle(
                             fontSize: 15, fontWeight: FontWeight.bold))
                   ],
